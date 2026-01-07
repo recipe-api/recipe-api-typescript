@@ -1,0 +1,26 @@
+{
+  "name": "recipe-api-typescript",
+  "version": "1.0.0",
+  "description": "TypeScript starter for exploring the Recipe API",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "categories": "tsx src/scripts/01-categories.ts",
+    "cuisines": "tsx src/scripts/02-cuisines.ts",
+    "browse": "tsx src/scripts/03-browse.ts",
+    "search": "tsx src/scripts/04-search.ts",
+    "filter": "tsx src/scripts/05-filter.ts",
+    "recipe": "tsx src/scripts/06-recipe.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.0"
+  }
+}
