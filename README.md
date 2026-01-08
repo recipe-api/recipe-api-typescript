@@ -40,6 +40,8 @@ npm run categories
 | Search | `npm run search -- --q="..."` | Search recipes by keyword | Free |
 | Filter | `npm run filter -- --cuisine="..."` | Filter by multiple criteria | Free |
 | Recipe | `npm run recipe -- --id="..."` | Get full recipe details | 1 credit |
+| Ingredient Categories | `npm run ingredient-categories` | List ingredient categories | Free |
+| Ingredients | `npm run ingredients -- --q="..."` | Search 10,000+ ingredients | Free |
 
 ## Usage Examples
 
@@ -104,6 +106,22 @@ npm run search -- --q="lasagna"
 npm run recipe -- --id=c0582be3-10bf-4077-ba54-b6ff6f236e53
 ```
 
+### Browse Ingredients
+
+```bash
+# List ingredient categories
+npm run ingredient-categories
+
+# Search ingredients by name
+npm run ingredients -- --q="chicken"
+
+# Filter by category
+npm run ingredients -- --category="Vegetables"
+
+# Use ingredient IDs to filter recipes
+npm run filter -- --ingredients="<ingredient-id-1>,<ingredient-id-2>"
+```
+
 ## Understanding API Credits
 
 The Recipe API uses a credit system:
@@ -141,7 +159,9 @@ recipe-api-starter/
 │       ├── 03-browse.ts       # Browse with pagination
 │       ├── 04-search.ts       # Keyword search
 │       ├── 05-filter.ts       # Multi-criteria filter
-│       └── 06-recipe.ts       # Full recipe details
+│       ├── 06-recipe.ts       # Full recipe details
+│       ├── 07-ingredient-categories.ts  # Ingredient categories
+│       └── 08-ingredients.ts  # Browse/search ingredients
 │
 └── types/
     └── api.ts             # TypeScript type definitions

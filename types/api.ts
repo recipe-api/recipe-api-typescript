@@ -171,3 +171,28 @@ export interface ApiError {
     message: string;
   };
 }
+
+// Ingredient category (from /api/v1/ingredient-categories)
+export interface IngredientCategory {
+  name: string;
+  count: number;
+}
+
+// Ingredient categories response
+export interface IngredientCategoriesResponse {
+  data: IngredientCategory[];
+}
+
+// Ingredient (from /api/v1/ingredients)
+export interface Ingredient {
+  id: string;
+  name: string;
+  category: string;
+  source: string;
+}
+
+// Ingredients response
+export interface IngredientsResponse {
+  data: Ingredient[];
+  meta: ListMeta;
+}

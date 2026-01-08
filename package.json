@@ -13,6 +13,8 @@
     "search": "tsx src/scripts/04-search.ts",
     "filter": "tsx src/scripts/05-filter.ts",
     "recipe": "tsx src/scripts/06-recipe.ts",
+    "ingredient-categories": "tsx src/scripts/07-ingredient-categories.ts",
+    "ingredients": "tsx src/scripts/08-ingredients.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
